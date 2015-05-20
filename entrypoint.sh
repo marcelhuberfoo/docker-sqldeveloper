@@ -3,6 +3,6 @@ set -e
 umask 002
 
 if [ "$1" = 'oracle-sqldeveloper' ]; then
-  exec gosu user "$@"
+  exec gosu $UNAME "$@"
 fi
 exec "$@"
